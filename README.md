@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SecureConnect - Authentication System
 
-## Getting Started
+Welcome to **SecureConnect**, a secure and user-friendly authentication system built for the **Xcelerate** hackathon. This project includes a **signup** and **login** system with proper validation, error handling, and session management.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
+1. [Features](#features)
+2. [Tech Stack](#tech-stack)
+3. [Setup Instructions](#setup-instructions)
+4. [Database Configuration](#database-configuration)
+5. [API Endpoints](#api-endpoints)
+6. [Assumptions](#assumptions)
+7. [Additional Features](#additional-features)
+8. [Team](#team)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
+### Signup Page
+- Input fields: Username, Password, Confirm Password.
+- Real-time validation:
+  - Username must be unique and at least 8 characters long.
+  - Password must contain:
+    - At least one uppercase letter.
+    - At least one lowercase letter.
+    - At least one special character.
+  - Confirm Password must match Password.
+- Error messages displayed under each field if validation fails.
+- Successful signup redirects to the login page after 2 seconds.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Login Page
+- Input fields: Username, Password.
+- Validation:
+  - Prevent login if fields are empty.
+  - Check if the username exists and the password is correct.
+- Successful login redirects to a landing page with a personalized message: `Hello, <username>!`.
 
-## Learn More
+### Session Management
+- Users remain logged in until they click the "Logout" button.
+- Logout redirects users to the login page.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
+- **Frontend**: Next.js, React
+- **Backend**: Next.js API Routes.
+- **Database**: MySQL.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KSDeshappriya/SpiritX_CypherX_01.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up the database (see [Database Configuration](#database-configuration)).
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and navigate to `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Database Configuration
+
+---
+
+## API Endpoints
+
+---
+
+## Additional Features
+
+---
+
+## Team
+- **Team Name**: CypherX
+- **Members**:
+
+---
+
+## Contact
+
+---
+
+Good luck, and happy coding! 🚀
