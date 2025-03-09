@@ -166,3 +166,16 @@ a.secondary {
     filter: invert();
   }
 }
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--gray-alpha-100);
+  transition: background 0.2s;
+}

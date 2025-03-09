@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  font-family: 'Arial', sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 400px;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.userGreeting {
+  margin: 1rem 0;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.logoutButton {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #e84118;
+  transform: scale(1.05);
+}
+
+.loadingText {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.nav {
+  margin-top: 1.5rem;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+}
+
+.navButton {
+  background-color: #2ed573;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navButton:hover {
+  background-color: #1eae4d;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .greeting {
+    font-size: 1.3rem;
+  }
+
+  .navButton {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .logoutButton {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+.audiowideRegular {
+  font-family: "Audiowide", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+}
