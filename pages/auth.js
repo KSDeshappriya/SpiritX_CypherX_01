@@ -67,7 +67,7 @@ export default function AuthPage() {
     if (!res.ok) return setError(data.error);
 
     alert("Signup successful! Redirecting to login...");
-    router.push("/login");
+    router.push("/auth");
   };
 
   // Function to handle login form submission
