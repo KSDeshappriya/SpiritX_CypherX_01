@@ -7,6 +7,8 @@ Welcome to **SecureConnect**, a secure and user-friendly authentication system b
 ## Demo
 ![Demo GIF](./demo.gif)
 
+[Full Video Link](https://drive.google.com/file/d/1NNh3ah3pfPlNdLlSh-owM3lZOrFaOVk_/view?usp=sharing)
+
 ---
 
 ## Table of Contents
